@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_197ab7e0861fc3e57e59f608496b414f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_197ab7e0861fc3e57e59f608496b414f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_197ab7e0861fc3e57e59f608496b414f = L.map(
+                "map_197ab7e0861fc3e57e59f608496b414f",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69c1939ecffd37ba49ee0efc870bd7c9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_69c1939ecffd37ba49ee0efc870bd7c9.addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            var circle_marker_ec6572e3721b100f16df5609f3fb85a6 = L.circleMarker(
+                [23.02579, 72.58727],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.84891810516486, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_ec6572e3721b100f16df5609f3fb85a6.bindTooltip(
+                `<div>
+                     
+        <b>ahmedabad</b><br>
+        Avg AQI: 88.49<br>
+        Min AQI: 13.00<br>
+        Max AQI: 195.00<br>
+        Avg Temp: 29.72°C<br>
+        Avg Humidity: 60.14%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50368858df47f508a2af5b600bccc335 = L.circleMarker(
+                [12.971940000000002, 77.59369],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.83662793315324, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_50368858df47f508a2af5b600bccc335.bindTooltip(
+                `<div>
+                     
+        <b>bengaluru</b><br>
+        Avg AQI: 88.37<br>
+        Min AQI: 13.00<br>
+        Max AQI: 218.00<br>
+        Avg Temp: 29.70°C<br>
+        Avg Humidity: 59.87%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed2513e2e5cf16fd38acfa94332249c3 = L.circleMarker(
+                [13.087839999999998, 80.27847],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.788315368045623, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_ed2513e2e5cf16fd38acfa94332249c3.bindTooltip(
+                `<div>
+                     
+        <b>chennai</b><br>
+        Avg AQI: 87.88<br>
+        Min AQI: 15.00<br>
+        Max AQI: 216.00<br>
+        Avg Temp: 29.99°C<br>
+        Avg Humidity: 88.31%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_189a38d7a2bb000ab05a70ba6392e5f4 = L.circleMarker(
+                [28.651950000000003, 77.23149],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.825844908020473, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_189a38d7a2bb000ab05a70ba6392e5f4.bindTooltip(
+                `<div>
+                     
+        <b>delhi</b><br>
+        Avg AQI: 88.26<br>
+        Min AQI: 13.00<br>
+        Max AQI: 198.00<br>
+        Avg Temp: 29.74°C<br>
+        Avg Humidity: 59.99%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6bf7cc8cacf0695cafd5bb6ed733c2c = L.circleMarker(
+                [17.38405, 78.45636],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.887482164682295, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_c6bf7cc8cacf0695cafd5bb6ed733c2c.bindTooltip(
+                `<div>
+                     
+        <b>hyderabad</b><br>
+        Avg AQI: 88.87<br>
+        Min AQI: 13.00<br>
+        Max AQI: 221.00<br>
+        Avg Temp: 29.72°C<br>
+        Avg Humidity: 60.19%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe4d2fa07a3d413d8833097b0f55c0d3 = L.circleMarker(
+                [27.26192, 95.39595],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.762007607414079, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_fe4d2fa07a3d413d8833097b0f55c0d3.bindTooltip(
+                `<div>
+                     
+        <b>jaipur</b><br>
+        Avg AQI: 87.62<br>
+        Min AQI: 11.00<br>
+        Max AQI: 204.00<br>
+        Avg Temp: 30.01°C<br>
+        Avg Humidity: 66.08%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18e70fa86828ab443eff5008410fd1d3 = L.circleMarker(
+                [22.56263, 88.36304],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.829063208091295, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_18e70fa86828ab443eff5008410fd1d3.bindTooltip(
+                `<div>
+                     
+        <b>kolkata</b><br>
+        Avg AQI: 88.29<br>
+        Min AQI: 11.00<br>
+        Max AQI: 202.00<br>
+        Avg Temp: 34.04°C<br>
+        Avg Humidity: 59.86%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57734df2ae61a0a3d5cc9179f2d41415 = L.circleMarker(
+                [26.83928, 80.92313],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.784513625270485, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_57734df2ae61a0a3d5cc9179f2d41415.bindTooltip(
+                `<div>
+                     
+        <b>lucknow</b><br>
+        Avg AQI: 87.85<br>
+        Min AQI: 13.00<br>
+        Max AQI: 201.00<br>
+        Avg Temp: 30.97°C<br>
+        Avg Humidity: 66.02%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34807514aae0df33f49017412790d19d = L.circleMarker(
+                [19.07283, 72.88261],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.68532299262555, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_34807514aae0df33f49017412790d19d.bindTooltip(
+                `<div>
+                     
+        <b>mumbai</b><br>
+        Avg AQI: 86.85<br>
+        Min AQI: 13.00<br>
+        Max AQI: 203.00<br>
+        Avg Temp: 26.92°C<br>
+        Avg Humidity: 83.86%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4dfa2c78ad1a5caa664948ca26b6d455 = L.circleMarker(
+                [18.51957, 73.85535],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.859520310142761, "stroke": true, "weight": 3}
+            ).addTo(map_197ab7e0861fc3e57e59f608496b414f);
+        
+    
+            circle_marker_4dfa2c78ad1a5caa664948ca26b6d455.bindTooltip(
+                `<div>
+                     
+        <b>pune</b><br>
+        Avg AQI: 88.60<br>
+        Min AQI: 13.00<br>
+        Max AQI: 198.00<br>
+        Avg Temp: 26.33°C<br>
+        Avg Humidity: 64.03%
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
